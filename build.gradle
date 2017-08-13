@@ -10,9 +10,6 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-    lintOptions {
-        abortOnError false
-    }
 }
 
 allprojects {
@@ -23,4 +20,8 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+lintOptions {
+    abortOnError false
 }
